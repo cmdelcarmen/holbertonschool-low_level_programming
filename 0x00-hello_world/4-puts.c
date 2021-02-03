@@ -1,12 +1,12 @@
-#!/bin/bash
 #include <stdio.h>
-#include <string.h>
 
-/*This program prints out a sentence*/
+/**
+* main - function prints the required text and returns 0
+* Return: 0
+*/
 
-int main ()
-{	
-	char sentence[]="Programming is like building a multilingual puzzle";
-	puts(sentece);
-	return 0;
+int main(void)
+{
+	puts("\"Programming is like building a multilingual puzzle");
+	return (0);
 }
