@@ -6,8 +6,8 @@
 */
 
 int main(void)
-{   
-    char char_var;
+{
+    char char_var:
     int int_var;
     long int long_int_var;
     long long int long_long_int;
@@ -18,7 +18,7 @@ int main(void)
     printf("Size of a long int: %zu byte(s)\n", sizeof(long_int_var));
     printf("Size of a long long int: %zu byte(s)\n", sizeof(long_long_int));
     printf("Size of a float: %zu byte(s)\n", sizeof(float_var));
-    
     return (0);
 }
+
 
