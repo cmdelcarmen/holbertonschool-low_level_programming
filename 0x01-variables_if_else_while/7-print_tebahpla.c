@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
- * * main - Produces a random number, then prints a string
- * * Return: 0
- * */
+* main - Produces a random number, then prints a string
+* Return: 0
+*/
 
 int main(void)
 {
