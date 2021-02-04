@@ -11,7 +11,7 @@ int main(void)
 
 	while (lowerCase < 123)
 	{
-		if (lowerCase != 113)
+		if (lowerCase != 101 && lowerCase != 113)
 		{
 			putchar(lowerCase);
 		}
