@@ -1,15 +1,20 @@
 #include <stdio.h>
-int main() 
-{ 
+/**
+* main - Produces a random number, then prints a string
+* Return: 0
+*/
 
-	char ch = 97; 
+int main(void)
+{
 
-	while(ch < 122)
+	char ch = 97;
+
+	while (ch < 122)
 	{
-		putchar(ch); 
+		putchar(ch);
 		ch++;
 	}
 
 	putchar('\n');
-	return (0); 
-} 
+	return (0);
+}
