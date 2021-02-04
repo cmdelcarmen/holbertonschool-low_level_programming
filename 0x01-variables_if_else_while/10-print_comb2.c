@@ -1,19 +1,23 @@
 #include <stdio.h>
 /**
-* main - Produces a random number, then prints a string
+* main - function prints the required text and returns 0
 * Return: 0
 */
-
 int main(void)
 {
-	int i;
+	int a;
 
-	for(i = 0; i < 100 ; i++)
+	for (a = 0; a < 100 ; a++)
 	{
-		putchar((i/10)+'0');
-		putchar((i%10)+'0');
-		printf("\n");
-	}
+		putchar((a / 10) + '0');
+		putchar((a % 10) + '0');
 
+		if (a <= 98)
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar ('\n');
 	return (0);
 }
