@@ -9,7 +9,7 @@ int main(void)
 
 	char ch = 97;
 
-	while (ch < 122)
+	while (ch < 123)
 	{
 		putchar(ch);
 		ch++;
