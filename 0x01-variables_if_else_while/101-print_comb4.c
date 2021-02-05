@@ -1,6 +1,6 @@
 #include <stdio.h>
-/*
-* main - function prints the required text and returns 0
+/**
+* main - function prints a set of numbers
 * Return: 0
 */
 int main(void)
