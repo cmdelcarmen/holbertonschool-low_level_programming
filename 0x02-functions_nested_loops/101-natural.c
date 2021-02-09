@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - funcation calculates sum on multiples
+* main - function calculates sum on multiples
 *
 * Return: 0
 */
