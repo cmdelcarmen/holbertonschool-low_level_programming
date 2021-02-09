@@ -2,27 +2,31 @@
 /**
 * main - funtion prints out first 50 fibonacci numbers
 *
-* Return: 0
+* Return : 0
 */
 int main(void)
 {
 	int n = 0;
 	int sum = 0;
-	long int prevSum1 = 0;
-	long int prevSum2 = 1;
+	unsigned long int prevSum1 = 0;
+	unsigned long int prevSum2 = 1;
 
 	while (n < 50)
 	{
 		sum = prevSum1 + prevSum2;
-		printf("%i, ", sum);
+		printf("%i", sum);
 
 		prevSum1 = prevSum2;
 		prevSum2 = sum;
 
+		if (n != 49)
+			{
+				printf(", ");
+			}
+		else
+				printf("\n");
 		n++;
-	}
-
-	printf("\n");
+	}	
 
 	return (0);
 }
