@@ -11,7 +11,7 @@ int main(void)
 	int multipleOfFive;
 	int sum = 0;
 
-	while (num < 1024)
+	while (num < 10)
 	{
 
 		multipleOfThree = num % 3;
@@ -25,7 +25,7 @@ int main(void)
 		num++;
 	}
 
-	printf("%i ", sum);
+	printf("%i", sum);
 	printf(" \n");
 
 	return (0);
