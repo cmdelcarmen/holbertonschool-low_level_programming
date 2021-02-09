@@ -7,8 +7,6 @@
 int main(void)
 {
 	int num = 0;
-	int multipleOfThree;
-	int multipleOfFive;
 	int sum = 0;
 
 	while (num < 1024)
@@ -21,8 +19,7 @@ int main(void)
 		num++;
 	}
 
-	printf("%i", sum);
-	printf(" \n");
+	printf("%i\n", sum);
 
 	return (0);
 }
