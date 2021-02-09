@@ -19,7 +19,7 @@ int main(void)
 		prevSum1 = prevSum2;
 		prevSum2 = sum;
 
-		if (n != 49)
+		if (n != 98)
 		{
 			printf(", ");
 		}
