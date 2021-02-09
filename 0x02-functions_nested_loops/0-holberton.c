@@ -1,9 +1,9 @@
-#include<stdio.h>
+#include "holberton.h"
 
 /**
-* main - prints out Holberton followed by a new line
+* main - prints out Holberton
 *
-* Return: 0
+* Return: Always
 */
 
 int main(void)
