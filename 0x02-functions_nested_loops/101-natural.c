@@ -6,7 +6,7 @@
 */
 int main(void)
 {
-	int num = 3;
+	int num = 0;
 	int multipleOfThree;
 	int multipleOfFive;
 	int sum = 0;
