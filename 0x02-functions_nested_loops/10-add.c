@@ -2,6 +2,8 @@
 
 /**
 * add - check the code for Holberton School students.
+* @a: int being added
+* @b: int being added
 *
 * Return: Always 0.
 **/
