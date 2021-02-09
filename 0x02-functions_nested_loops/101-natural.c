@@ -11,7 +11,7 @@ int main(void)
 	int multipleOfFive;
 	int sum = 0;
 
-	while (num < 10)
+	while (num < 1024)
 	{
 
 		multipleOfThree = num % 3;
