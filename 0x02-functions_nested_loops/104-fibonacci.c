@@ -1,34 +1,28 @@
 #include <stdio.h>
 /**
-* main - funtion prints out first 50 fibonacci numbers
+* main - prints fibonacci numbers
 *
 * Return: 0
 */
 int main(void)
 {
-	int n = 0;
-	unsigned long int sum = 0;
-	unsigned long int prevSum1 = 0;
-	unsigned long int prevSum2 = 1;
+	long double fib1 = 1, fib2 = 2, fib3, num, count = 0;
 
-	while (n < 99)
+	num = 100;
+	printf("%.0Lf, ", fib1);
+	printf("%.0Lf, ", fib2);
+	count = 4;
+	while (count < num)
 	{
-		sum = prevSum1 + prevSum2;
-		printf("%lu", sum);
-
-		prevSum1 = prevSum2;
-		prevSum2 = sum;
-
-		if (n != 98)
-		{
+		fib3 = fib1 + fib2;
+		count++;
+		printf("%.0Lf", fib3);
+		fib1 = fib2;
+		fib2 = fib3;
+		if (count != 100)
 			printf(", ");
-		}
-		else
-		{
-			printf("\n");
-		}
-		n++;
 	}
+	printf("\n");
 	return (0);
 }
 
