@@ -16,7 +16,7 @@ int main(void)
 	{
 		fib3 = fib1 + fib2;
 		count++;
-		printf("%0.Lf", fib3);
+		printf("%.0Lf", fib3);
 		fib1 = fib2;
 		fib2 = fib3;
 		if (count != 100)
