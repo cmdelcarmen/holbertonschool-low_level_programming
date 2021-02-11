@@ -11,9 +11,9 @@ int main(void)
 
 	for (number = 1; number < 101; number++)
 	{
-		if (number % 3 == 0)
+		if ((number % 3 == 0) && (number %5 == 0 ))
 		{
-			printf("Fizz ");
+			printf("FizzBuzz ");
 		}
 
 		else if (number % 5 == 0)
@@ -21,9 +21,9 @@ int main(void)
 			printf("Buzz ");
 		}
 
-		else if (number % 3 == 0 && number % 5 == 0)
+		else if (number % 3 == 0)
 		{
-			printf("Fizz Buzz ");
+			printf("Fizz ");
 		}
 
 		else
