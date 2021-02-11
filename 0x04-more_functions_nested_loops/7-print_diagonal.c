@@ -1,28 +1,21 @@
 #include "holberton.h"
 /**
-* print_line - function prints underscores
-*@n: int passed to function
-*
-*/
-
-void print_line(int n)
+* print_diagonal - Draws a diagonal line.
+* @num: The number of \ to be printed.
+**/
+void print_diagonal(int num)
 {
-	int lines;
-	int spaces;
+	int line;
+	int space;
 
-	for (lines = 0; lines < n; lines++)
-	{
-		for (spaces = 0; spaces <= lines; spaces++)
+	if (num > 0)
+		for (line = 0; line < num; line++)
+		{
+			for (space = 0; space < line; space++)
 				_putchar(' ');
-		
-		_putchar('\\');
+			_putchar('\\');
+			_putchar('\n');
+		}
+	else
 		_putchar('\n');
-
-	}
-
-	if (n <= 0)
-	{
-		_putchar('\n');
-	}
 }
-
