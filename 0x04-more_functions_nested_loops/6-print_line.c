@@ -1,4 +1,9 @@
 #include "holberton.h"
+/**
+* print_line - function prints underscores
+*@n: int passed to function
+*
+*/
 
 void print_line(int n)
 {
