@@ -1,5 +1,9 @@
 #include "holberton.h"
 
+/**
+* print_number - function prints int
+*@n: the number
+*/
 void print_number(int n)
 {
 	unsigned int number;
@@ -15,11 +19,11 @@ void print_number(int n)
 		number = n;
 	}
 
-	if (x / 10)
+	if (number / 10)
 	{
 		print_number(x / 10);
 	}
 
-	_putchar(x % 10 + '0');
+	_putchar(number % 10 + '0');
 
 }
