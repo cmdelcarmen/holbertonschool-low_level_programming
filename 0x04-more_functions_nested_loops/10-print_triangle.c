@@ -8,10 +8,10 @@ void print_triangle(int big)
 {
 	int rows;
 	int hashes;
-	
+
 	if (big <= 0)
 		_putchar('\n');
-	
+
 	for (rows = 1; rows <= big; rows++)
 	{
 		for (hashes = 1; hashes <= big; hashes++)
