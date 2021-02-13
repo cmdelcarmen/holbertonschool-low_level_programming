@@ -1,23 +1,10 @@
-//#include "holberton.h"
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
+* main - check the code for Holberton School students.
+*
+* Return: Always 0.
 */
-void rev_string(char *s);
-
-int main(void)
-{
-    char s[10] = "Holberton";
-
-    printf("%s\n", s);
-    rev_string(s);
-    printf("%s\n", s);
-    return (0);
-}
-
 void rev_string(char *s)
 {
 	int arrayLength = 0;
@@ -30,7 +17,7 @@ void rev_string(char *s)
 	{
 		arrayLength++;
 	}
-	
+
 	newSpot = arrayLength - 1;
 
 	{
@@ -43,4 +30,3 @@ void rev_string(char *s)
 		}
 	}	
 }
-
