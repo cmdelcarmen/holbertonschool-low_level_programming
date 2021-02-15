@@ -1,9 +1,8 @@
 #include "holberton.h"
 
 /**
-* main - check the code for Holberton School students.
-*
-* Return: Always 0.
+* rev_string - function prints string backwards
+* @s: pointer passed to funcation
 */
 void rev_string(char *s)
 {
@@ -25,8 +24,8 @@ void rev_string(char *s)
 		{
 			sub = s[oldSpot];
 			s[oldSpot] = s[newSpot];
-			s[newSpot]= sub;
+			s[newSpot] = sub;
 			newSpot--;
 		}
-	}	
+	}
 }
