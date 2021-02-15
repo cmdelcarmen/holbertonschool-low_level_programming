@@ -1,6 +1,12 @@
 #include "holberton.h"
 #include <stdio.h>
-
+/**
+* _strcpy -function copies string pointed to by src and prints it
+* @dest: pointed passed
+* @src: pointed passed
+*
+* Return : dest pointer
+*/
 char *_strcpy(char *dest, char *src)
 {
 	int count, arrayLength;
@@ -12,12 +18,12 @@ char *_strcpy(char *dest, char *src)
 		arrayLength++;
 	}
 
-	for(count = 0; count <= arrayLength; count++)
+	for (count = 0; count <= arrayLength; count++)
 	{
 		dest[count] = src[count];
 	}
 
 	printf("\n");
 
-	return(dest);
+	return (dest);
 }
