@@ -1,4 +1,6 @@
 #include "holberton.h"
+#include <stdio.h>
+
 /**
  * puts_half - functio prints out half a string
  * @str: pointer passed
@@ -15,9 +17,17 @@ void puts_half(char *str)
 		arrayLength++;
 	}
 
-	printLength = (arrayLength / 2);
+	arrayLength--;
 
-	for (count = printLength; count <= arrayLength; count++)
+	if(arrayLength % 2 != 0)
+	{
+		printLength = ((arrayLength - 1) / 2);
+	}
+	
+	else
+		printLength = (arrayLength / 2);
+
+	for (count = printLength + 1; count <= arrayLength; count++)
 	{
 		_putchar(str[count]);
 	}
