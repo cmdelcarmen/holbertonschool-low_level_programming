@@ -19,11 +19,11 @@ void puts_half(char *str)
 
 	arrayLength--;
 
-	if(arrayLength % 2 != 0)
+	if (arrayLength % 2 != 0)
 	{
 		printLength = ((arrayLength - 1) / 2);
 	}
-	
+
 	else
 		printLength = (arrayLength / 2);
 
@@ -33,4 +33,3 @@ void puts_half(char *str)
 	}
 	_putchar('\n');
 }
-
