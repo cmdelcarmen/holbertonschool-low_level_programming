@@ -1,13 +1,19 @@
 #include "holberton.h"
 #include <stdbool.h>
 
+/**
+* *cap_string - check the code for Holberton School students.
+* @s: pointer passed
+* Return: Always s
+*/
 char *cap_string(char *s)
 {
 	int count;
 	int count2;
 	int capitalize = 1;
 
-	char arr[] = {'\t',' ','\n', ',',';', '.', '!', '?', '"', '(',')', '{','}'};
+	char arr[] = {'\t', ' ', '\n', ',', ';', '.', '!', '?',
+		'"', '(', ')', '{', '}'};
 
 	for (count = 0; s[count] != '\0'; count++)
 	{
