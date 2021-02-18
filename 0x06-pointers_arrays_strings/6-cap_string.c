@@ -4,7 +4,10 @@
 char *cap_string(char *s)
 {
 	int count;
-	int capitalize = 0;
+	int count2;
+	int capitalize = 1;
+
+	char arr[] = {'\t',' ','\n', ',',';', '.', '!', '?', '"', '(',')', '{','}'};
 
 	for (count = 0; s[count] != '\0'; count++)
 	{
@@ -15,13 +18,14 @@ char *cap_string(char *s)
 				s[count] -= 32;
 			}
 			capitalize = 0;
-			continue;
 		}
-		if (s[count] == 32)
-		{	
+
+		for (count2 = 0; arr[count2] != '\0'; count2++)
+		{
+			if (s[count] == arr[count2])
 				capitalize = 1;
-				continue;
 		}
 	}
+
 	return (s);
 }
