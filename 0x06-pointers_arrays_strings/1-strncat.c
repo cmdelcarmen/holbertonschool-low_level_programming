@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+* *_strncat - function adds to strings
+* @dest: pointer passed
+* @src: pointer passed
+* @n: int passed to function
+*
+* Return: dest
+*/
 char *_strncat(char *dest, char *src, int n)
 {
 	int arrayLength, count;
