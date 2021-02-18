@@ -1,12 +1,12 @@
 #include "holberton.h"
 
 /**
-* *_strcat - function copies string
-* @dest: pointer passed
-* @src: pointer passed
-*
-* Return: dest pointer
-*/
+ * * *_strcat - function copies string
+ * * @dest: pointer passed
+ * * @src: pointer passed
+ * *
+ * * Return: dest pointer
+ */
 char *_strcat(char *dest, char *src)
 {
 	int count;
@@ -18,6 +18,8 @@ char *_strcat(char *dest, char *src)
 	{
 		arrayLength++;
 	}
+
+	arrayLength--;
 
 	for (count = 0; src[count] != '\0'; count++)
 	{
