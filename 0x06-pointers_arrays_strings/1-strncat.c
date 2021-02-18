@@ -8,17 +8,17 @@ char *_strncat(char *dest, char *src, int n)
 		;
 
 	for (count = 0; src[count] != '\0'; count++)
+	{
+		if (count < n)
 		{
-			if (count < n)
-			{
-				dest[arrayLength + count] =  src[count];
-			}
+			dest[arrayLength + count] =  src[count];
 		}
+	}
 
 	if ((arrayLength + count) < n)
-		{
-			dest[arrayLength + count] = '\0';
-		}
+	{
+		dest[arrayLength + count] = '\0';
+	}
 
 	return (dest);
 }
