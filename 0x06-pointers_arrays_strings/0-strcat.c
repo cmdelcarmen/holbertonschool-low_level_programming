@@ -10,16 +10,12 @@
 char *_strcat(char *dest, char *src)
 {
 	int count;
-	int arrayLength;
+	int arrayLength = 0;
 
-	arrayLength = 0;
-
-	for (count = 0; src[count] != '\0'; count++)
+	for (count = 0; dest[count] != '\0'; count++)
 	{
 		arrayLength++;
 	}
-
-	arrayLength--;
 
 	for (count = 0; src[count] != '\0'; count++)
 	{
