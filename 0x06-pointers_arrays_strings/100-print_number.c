@@ -1,22 +1,24 @@
 #include "holberton.h"
-
 /**
- *  * main - check the code for Holberton School students.
- *   *
- *    * Return: Always 0.
- *     */
-int main(void)
+ * * print_number - print interger
+ * * @n: the number
+ */
+void print_number(int n)
 {
-	print_number(98);
-	_putchar('\n');
-	print_number(402);
-	_putchar('\n');
-	print_number(1024);
-	_putchar('\n');
-	print_number(0);
-	_putchar('\n');
-	print_number(-98);
-	_putchar('\n');
-	return (0);
-}
+	unsigned int num;
 
+	if (n < 0)
+	{
+		num = -n;
+		_putchar('-');
+	}
+	else
+	{
+		num = n;
+	}
+	if (num / 10)
+	{
+		print_number(num / 10);
+	}
+	_putchar(num % 10 + '0');
+}
