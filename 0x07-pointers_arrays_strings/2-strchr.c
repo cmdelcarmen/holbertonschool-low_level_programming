@@ -7,7 +7,6 @@
  *
  * Return: pointer or NULL
  */
-
 char *_strchr(char *s, char c)
 {
 	int printPoint;
@@ -16,9 +15,9 @@ char *_strchr(char *s, char c)
 	for (printPoint = 0; s[printPoint] != c; printPoint++)
 		;
 
-	if (s == '\0')
+	if (printPoint == 0)
 	{
-		return (0);
+		return ('\0');
 	}
 	else
 	{
