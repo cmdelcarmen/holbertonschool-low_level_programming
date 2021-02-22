@@ -28,7 +28,12 @@ char *_strpbrk(char *s, char *accept)
 		}
 	}
 
-	s += printPoint;
+	if (printPoint > 0)
+	{
+		s += printPoint;
+		return (s);
+	}
 
-	return (s);
+	else
+		return ('\0');
 }
