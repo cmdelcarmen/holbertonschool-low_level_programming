@@ -9,13 +9,24 @@
  */
 char *_strchr(char *s, char c)
 {
+	int count;
 	int printPoint;
+	int stop = 1;
 
 
-	for (printPoint = 0; s[printPoint] != c; printPoint++)
-		;
+	for (count = 0; s[count] != '\n'; count++)
+	{
+		if (stop == 1)
+		{
+			if (s[count] == c)
+			{
+				printPoint = count;
+				stop = 0;
+			}
+		}
+	}
 
-	if (printPoint > 0)
+	if (stop == 0)
 	{
 		s += printPoint;
 		return (s);
