@@ -15,13 +15,13 @@ char *_strchr(char *s, char c)
 	for (printPoint = 0; s[printPoint] != c; printPoint++)
 		;
 
-	if (printPoint == 0)
-	{
-		return ('\0');
-	}
-	else
+	if (printPoint > 0)
 	{
 		s += printPoint;
 		return (s);
 	}
+
+	else
+		return ('\0');
+
 }
