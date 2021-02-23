@@ -10,23 +10,23 @@
 
 void print_diagsums(int *a, int size)
 {
-		int count, sum1, sum2;
-		double squareSize;
+	int count, sum1, sum2;
+	double squareSize;
 
-		squareSize = (size * size);
-		sum1 = 0;
-		sum2 = 0;
+	squareSize = (size * size);
+	sum1 = 0;
+	sum2 = 0;
 
-		for (count = 0; count < squareSize; count += (size + 1 ))
-		{
-			sum1 += (a[count]);
-		}
+	for (count = 0; count < squareSize; count += (size + 1 ))
+	{
+		sum1 += (a[count]);
+	}
 
-		for (count = size - 1; count < squareSize; count += (size - 1))
-		{
-			sum2 += (a[count]);
-			squareSize--;
-		}
+	for (count = size - 1; count < squareSize; count += (size - 1))
+	{
+		sum2 += (a[count]);
+		squareSize--;
+	}
 
-		printf("%i, %i \n", sum1, sum2);
+	printf("%i, %i\n", sum1, sum2);
 }
