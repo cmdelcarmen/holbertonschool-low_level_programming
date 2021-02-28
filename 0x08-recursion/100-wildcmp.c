@@ -67,6 +67,11 @@ int getCompare(char *s1, char *s2, int same,
 		}
 	}
 
+	if ((s1[8] != s2[0]) && (arrayLength1 == 0 || arrayLength2 == 0))
+	{
+		same = 0;
+	}
+
 	if (s2[arrayLength2] == '*' || s2[arrayLength2] != '\0')
 	{
 		arrayLength2--;
