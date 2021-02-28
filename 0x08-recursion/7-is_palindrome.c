@@ -1,42 +1,20 @@
-#include "holberton.h"
+#include <stdio.h>
 
-int getLength(char *s, int);
-int is_palindrome(char *s);
-int getPalindrome(int arrayLength, char *s, int count, int isPalindrome);
+int getCompare(char *s1, char *s2, int same, int arrayLength1, int arrayLength2);
+char movePointer(char *s);
+int getLength(char *s, int arrayLength);
 
-/**
- * is_palindrome - check the code for Holberton School students.
- * @s: array passed
- * Return: Always 0.
- */
-int is_palindrome(char *s)
+int wildcmp(char *s1, char *s2)
 {
-	int arrayLength = 0;
-	int count = 0, isPalindrome = 0;
+	int same = 0, arrayLength1 = 0, arrayLength2 =0;
 
-	if (s[0] == '\0')
-	{
-		return (isPalindrome);
-	}
-	arrayLength = getLength(s, arrayLength);
-	isPalindrome = getPalindrome(arrayLength, s, count, isPalindrome);
+	arrayLength1 = getLength(s1, arrayLength1);
+	arrayLength2 = getLength(s2, arrayLength2);
+	same = getCompare(s1, s2, same, arrayLength1, arrayLength2);
 
-	if (isPalindrome == 0)
-	{
-		return (isPalindrome);
-	}
-	else
-	{
-		return (1);
-	}
+	return (same);
 }
 
-/**
- * getLength - check the code for Holberton School students.
- * @s: array passed
- * @arrayLength: length of array
- * Return: isPalindrome
- */
 int getLength(char *s, int arrayLength)
 {
 	if (s[arrayLength] != '\0')
@@ -51,30 +29,34 @@ int getLength(char *s, int arrayLength)
 	return (getLength(s, arrayLength));
 }
 
-/**
- * getPalindrome - check the code for Holberton School students.
- * @arrayLength: length of array
- * @s: array passed
- * @count: counter
- * @isPalindrome: bool variable
- * Return: isPalindrome
- */
-int getPalindrome(int arrayLength, char *s, int count, int isPalindrome)
+int getCompare(char *s1, char *s2, int same, int arrayLength1, int arrayLength2)
 {
-	if ((count == arrayLength) || (count >  arrayLength))
+	if ((s2[arrayLength2] != '*') && (s1[arrayLength1] != '\0') 
+			&& (s2[arrayLength2] != '\0'))
 	{
-		return (isPalindrome);
+		if (s1[arrayLength1] == s2[arrayLength2])
+		{
+			same = 1;
+		}
+		else
+		{
+			same = 0;
+		}
 	}
 
-	if (s[count] == s[arrayLength])
+	if (s2[arrayLength2] == '*' || s2[arrayLength2] != '\0')
 	{
-		isPalindrome = 1;
-		return (getPalindrome(arrayLength - 1, s, count + 1, isPalindrome));
+		arrayLength2--;
 	}
 
-	else
+	if (s1[arrayLength1] == '\0' || s2[arrayLength2] == '\0')
 	{
-		isPalindrome = 0;
-		return (isPalindrome);
+		return (same);
 	}
+	if (arrayLength1 != 0 && s2[arrayLength2] != '*')
+	{
+		arrayLength1 -= 1;
+	}
+
+	return(getCompare(s1, s2, same, arrayLength1, arrayLength2));
 }
