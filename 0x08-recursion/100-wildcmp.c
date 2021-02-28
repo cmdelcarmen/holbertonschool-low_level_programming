@@ -55,7 +55,7 @@ int getCompare(char *s1, char *s2, int same,
 		int arrayLength1, int arrayLength2)
 {
 	if ((s2[arrayLength2] != '*') && (s1[arrayLength1] != '\0')
-			&& (s2[arrayLength2] != '\0') && (s2[arrayLength2 - 1] != '\0'))
+			&& (s2[arrayLength2] != '\0'))
 	{
 		if (s1[arrayLength1] == s2[arrayLength2])
 		{
