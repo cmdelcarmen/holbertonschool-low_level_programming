@@ -61,7 +61,7 @@ int getLength(char *s, int arrayLength)
  */
 int getPalindrome(int arrayLength, char *s, int count, int isPalindrome)
 {
-	if ((count == arrayLength) || ((count >  arrayLength))
+	if ((count == arrayLength) || (count >  arrayLength))
 	{
 		return (isPalindrome);
 	}
