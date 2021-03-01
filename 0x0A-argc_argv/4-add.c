@@ -20,11 +20,8 @@ int main(int argc, char *argv[])
 				print = 0;
 				break;
 			}
-			else
-			{
-				sum += atoi(argv[count]);
-			}
 		}
+		sum += atoi(argv[count]);
 	}
 	if (print == 1)
 	{
