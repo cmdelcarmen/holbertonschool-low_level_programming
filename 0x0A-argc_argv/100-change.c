@@ -10,11 +10,12 @@ int main(int argc, char *argv[])
 {
 	int ten = 10, five = 5, two = 2, oneVal = 1, count = 0, num, cents;
 
-	cents = atoi(argv[1]);
 	if (argc != 2)
 	{
-		return (printf("Error\n"));
+		printf("Error\n");
+		return (1);
 	}
+	cents = atoi(argv[1]);
 	for (num = 0; cents > 0; num++)
 	{
 		if (cents >= 25)
@@ -30,8 +31,7 @@ int main(int argc, char *argv[])
 			continue;
 		}
 		else if ((cents >= 5) && (cents < 10))
-		{
-			cents -= five;
+		{   cents -= five;
 			count++;
 			continue;
 		}
