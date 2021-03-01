@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	for (count = 1; count < argc; count++)
 	{
-		for (count2 = 0; count2 <= count; count2++)
+		for (count2 = 0; argv[count][count2] != '\0'; count2++)
 		{
 			if (argv[count][count2] < '0' || argv[count][count2] > '9')
 			{
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", sum);
 	}
-	else
+	if (print == 0)
 	{
 		printf("Error\n");
 	}
