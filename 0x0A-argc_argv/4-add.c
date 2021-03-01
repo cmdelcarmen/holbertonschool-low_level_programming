@@ -9,24 +9,30 @@
  */
 int main(int argc, char *argv[])
 {
-	int count, sum = 0, print = 1;
+	int count, count2, sum = 0, print = 1;
 
 	for (count = 1; count < argc; count++)
 	{
-		if (*argv[count] < '0' || *argv[count] > '9')
+		for (count2 = 0; count2 <= count; count2++)
 		{
-			printf("Error\n");
-			print = 0;
-			break;
-		}
-		else
-		{
-			sum += atoi(argv[count]);
+			if (argv[count][count2] < '0' || argv[count][count2] > '9')
+			{
+				print = 0;
+				break;
+			}
+			else
+			{
+				sum += atoi(argv[count]);
+			}
 		}
 	}
 	if (print == 1)
 	{
 		printf("%d\n", sum);
+	}
+	else
+	{
+		printf("Error\n");
 	}
 	return (0);
 }
