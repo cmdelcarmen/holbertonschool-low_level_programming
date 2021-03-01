@@ -46,6 +46,6 @@ int main(int argc, char *argv[])
 			continue;
 		}
 	}
-	printf("%d \n", count);
+	printf("%d\n", count);
 	return (0);
 }
