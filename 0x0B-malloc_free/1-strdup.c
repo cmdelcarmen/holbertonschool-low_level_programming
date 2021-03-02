@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	char *copiedString;
 	int count = 0, arrayLength = 0;
 
-	if (str == '\0')
+	if (str == NULL)
 	{
 		return (NULL);
 	}
