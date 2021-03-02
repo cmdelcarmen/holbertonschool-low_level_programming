@@ -45,7 +45,7 @@ int **alloc_grid(int width, int height)
 			pointerSquare[count][count2] = 0;
 		}
 
-		pointerSquare[count][count2-1] = ('\0');
+		pointerSquare[count][count2 - 1] = ('\0');
 	}
 
 	return (pointerSquare);
