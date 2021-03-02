@@ -9,7 +9,6 @@
  * Return: NULL or pointer
  */
 char *_strdup(char *str)
-char *_strdup(char *str)
 {
 	char *copiedString;
 	int count = 0, arrayLength = 0;
