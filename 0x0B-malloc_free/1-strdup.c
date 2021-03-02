@@ -23,8 +23,6 @@ char *_strdup(char *str)
 		arrayLength++;
 	}
 
-	arrayLength--;
-
 	copiedString = malloc(sizeof(char) * arrayLength);
 
 	for (count = 0; str[count] != '\0'; count++)
