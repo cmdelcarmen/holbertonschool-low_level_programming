@@ -17,15 +17,13 @@ char *str_concat(char *s1, char *s2)
 	{
 		arrayLength++;
 	}
-	arrayLength--;
 
 	for (count = 0; s2[count] != '\0'; count++)
 	{
 		arrayLength++;
 	}
-	arrayLength--;
 
-	concatenatedString = malloc(sizeof(char) * arrayLength);
+	concatenatedString = malloc(sizeof(char) * arrayLength + 1);
 
 	if (concatenatedString == NULL)
 	{
