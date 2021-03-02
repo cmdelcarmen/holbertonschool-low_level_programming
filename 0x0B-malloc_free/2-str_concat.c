@@ -14,16 +14,17 @@ char *str_concat(char *s1, char *s2)
 	int count, count2 = 2, arrayLength = 0;
 
 	if (s1 == NULL)
+	{
 		s1 = "";
-
+	}
 	if (s2 == NULL)
+	{
 		s2 = "";
-
+	}
 	for (count = 0; s1[count] != '\0'; count++)
 	{
 		arrayLength++;
 	}
-
 	for (count = 0; s2[count] != '\0'; count++)
 	{
 		arrayLength++;
@@ -40,7 +41,6 @@ char *str_concat(char *s1, char *s2)
 	{
 		concatenatedString[count] = s1[count];
 	}
-
 	for (count2 = 0; s2[count2] != '\0'; count2++)
 	{
 		concatenatedString[count] = s2[count2];
