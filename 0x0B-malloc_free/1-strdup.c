@@ -31,7 +31,7 @@ char *_strdup(char *str)
 	}
 	copiedString[count] = '\0';
 
-	if (str == NULL)
+	if (copiedString == NULL)
 	{
 		return (NULL);
 	}
