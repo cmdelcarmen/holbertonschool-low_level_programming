@@ -9,11 +9,12 @@
  * Return: NULL or pointer
  */
 char *_strdup(char *str)
+char *_strdup(char *str)
 {
 	char *copiedString;
 	int count = 0, arrayLength = 0;
 
-	if (str == NULL)
+	if (*str == '\0')
 	{
 		return (NULL);
 	}
@@ -23,20 +24,18 @@ char *_strdup(char *str)
 		arrayLength++;
 	}
 
-	copiedString = malloc(sizeof(char) * arrayLength);
-
-	if (copiedString == NULL)
-	{
-		return (NULL);
-	}
+	copiedString = malloc(sizeof(char) * (arrayLength + 1));
 
 	for (count = 0; str[count] != '\0'; count++)
 	{
 		copiedString[count] = str[count];
 	}
-
 	copiedString[count] = '\0';
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
 
 	return (copiedString);
 }
-
