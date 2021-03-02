@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	char *copiedString;
 	int count = 0, arrayLength = 0;
 
-	if (*str == '\0')
+	if (str == '\0')
 	{
 		return (NULL);
 	}
@@ -34,6 +34,8 @@ char *_strdup(char *str)
 	{
 		copiedString[count] = str[count];
 	}
+
+	copiedString[count] = '\0';
 
 	return (copiedString);
 }
