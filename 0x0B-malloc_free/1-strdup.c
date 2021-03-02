@@ -29,6 +29,7 @@ char *_strdup(char *str)
 	{
 		copiedString[count] = str[count];
 	}
+	copiedString[count] = '\0';
 
 	if (str == NULL)
 	{
