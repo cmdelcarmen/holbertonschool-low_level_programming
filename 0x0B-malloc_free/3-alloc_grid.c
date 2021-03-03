@@ -34,7 +34,6 @@ int **alloc_grid(int width, int height)
 				free(pointerSquare[count2]);
 			}
 			free(pointerSquare);
-
 			return (NULL);
 		}
 	}
