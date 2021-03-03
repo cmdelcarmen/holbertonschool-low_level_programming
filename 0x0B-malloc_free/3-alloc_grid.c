@@ -30,7 +30,12 @@ int **alloc_grid(int width, int height)
 	}
 	for (count = 0; count < height; count++)
 	{
-		pointerSquare[count] = malloc(sizeof(int) * width);
+		pointerSquare[count] = malloc(sizeof(int) * (width));
+
+		if (pointerSquare == NULL)
+		{
+			return (NULL);
+		}
 	}
 
 	if (pointerSquare == NULL)
@@ -44,8 +49,6 @@ int **alloc_grid(int width, int height)
 		{
 			pointerSquare[count][count2] = 0;
 		}
-
-		pointerSquare[count][count2 - 1] = ('\0');
 	}
 
 	return (pointerSquare);
