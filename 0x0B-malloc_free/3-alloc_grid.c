@@ -21,6 +21,7 @@ int **alloc_grid(int width, int height)
 
 	if (pointerSquare == NULL)
 	{
+		free(pointerSquare);
 		return (NULL);
 	}
 	for (count = 0; count < height; count++)
