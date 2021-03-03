@@ -12,7 +12,7 @@ void free_grid(int **grid, int height)
 {
 	int count;
 
-	for (cout = 0; count < height; height++)
+	for (count = 0; count < height; height++)
 	{
 		free(grid[count]);
 	}
