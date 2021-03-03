@@ -18,28 +18,29 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 	if (height < 1)
-	{
 		return (NULL);
-	}
+
 	pointerSquare = malloc(sizeof(int *) * height);
 
 	if (pointerSquare == NULL)
-	{
 		return (NULL);
-	}
+
 	for (count = 0; count < height; count++)
 	{
 		pointerSquare[count] = malloc(sizeof(int) * (width));
 
 		if (pointerSquare == NULL)
 		{
+			for (count = count; count >= 0; count--)
+			{
+				free(pointerSquare[count]);
+			}
+			free(pointerSquare);
 			return (NULL);
 		}
 	}
 	if (pointerSquare == NULL)
-	{
 		return (NULL);
-	}
 
 	for (count = 0; count < height; count++)
 	{
