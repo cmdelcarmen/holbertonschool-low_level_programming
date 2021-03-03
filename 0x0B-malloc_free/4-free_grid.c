@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * free_grid - frees the malloc pointer
- * @grid: the array
- * @height: height of the array
+ * free_grid - function frees a 2 dimensional grid
+ * @grid: pointer passed
+ * @height: int passed
  */
 void free_grid(int **grid, int height)
 {
