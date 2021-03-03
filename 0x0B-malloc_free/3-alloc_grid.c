@@ -12,12 +12,7 @@ int **alloc_grid(int width, int height)
 	int count, count2;
 	int **pointerSquare;
 
-	if (width < 1)
-	{
-		return (NULL);
-	}
-	if (height < 1)
-	{
+	if (width < 1 || height < 1)
 		return (NULL);
 	}
 
@@ -25,7 +20,6 @@ int **alloc_grid(int width, int height)
 
 	if (pointerSquare == NULL)
 	{
-
 		return (NULL);
 	}
 	for (count = 0; count < height; count++)
@@ -43,7 +37,6 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-
 	if (pointerSquare == NULL)
 	{
 		return (NULL);
