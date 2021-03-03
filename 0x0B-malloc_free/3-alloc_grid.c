@@ -21,7 +21,6 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-
 	pointerSquare = malloc(sizeof(int *) * height);
 
 	if (pointerSquare == NULL)
@@ -37,7 +36,6 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 	}
-
 	if (pointerSquare == NULL)
 	{
 		return (NULL);
@@ -50,6 +48,5 @@ int **alloc_grid(int width, int height)
 			pointerSquare[count][count2] = 0;
 		}
 	}
-
 	return (pointerSquare);
 }
