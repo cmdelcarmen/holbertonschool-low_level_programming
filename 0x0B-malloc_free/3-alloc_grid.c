@@ -21,27 +21,25 @@ int **alloc_grid(int width, int height)
 
 	if (pointerSquare == NULL)
 	{
-		free(pointerSquare);
 		return (NULL);
 	}
+
 	for (count = 0; count < height; count++)
 	{
 		pointerSquare[count] = malloc(sizeof(int) * (width));
 
-		if (pointerSquare == NULL)
+		if (pointerSquare[count] == NULL)
 		{
-			for (; count >= 0; count--)
+			for (count -= 1; count >= 0; count--)
 			{
 				free(pointerSquare[count]);
 			}
 			free(pointerSquare);
+
 			return (NULL);
 		}
 	}
-	if (pointerSquare == NULL)
-	{
-		return (NULL);
-	}
+
 	for (count = 0; count < height; count++)
 	{
 		for (count2 = 0; count2 < width; count2++)
