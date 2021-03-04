@@ -1,7 +1,7 @@
 #include <stdlib.h>
 
 /**
- * malloc_checked: function prints allocated memory
+ * *malloc_checked - function prints allocated memory
  * @b: int passed
  * Return: pointer to allocated memory or 98
  */
