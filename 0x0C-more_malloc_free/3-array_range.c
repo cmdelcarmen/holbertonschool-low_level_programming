@@ -8,7 +8,7 @@
  */
 int *array_range(int min, int max)
 {
-	int count = 0;
+	int count;
 	int *minMax;
 
 	if (min > max)
@@ -16,16 +16,17 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	minMax = malloc(sizeof(int) * (max + 1));
+	minMax = malloc(sizeof(int) * ((max - min) + 1));
 
 	if (minMax == NULL)
 	{
 		return (NULL);
 	}
 
-	for (count = min; count <= max; count++)
+	for (count = 0; min <= max; count++)
 	{
-		minMax[count] = count;
+		minMax[count] = min;
+		min++;
 	}
 
 	return (minMax);
