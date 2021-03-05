@@ -42,5 +42,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		newPointer[count] = ((char *)ptr)[count];
 	}
 
+	free(ptr);
+
 	return (newPointer);
 }
