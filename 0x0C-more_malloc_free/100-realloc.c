@@ -42,6 +42,13 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	free(ptr);
 	return (newPointer);
 }
+/**
+ * *_memcpy - function copies memory
+ * @dest: pointer
+ * @src: pointer
+ * @n: int passed
+ * Return: pointer
+ */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int count;
