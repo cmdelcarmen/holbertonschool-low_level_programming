@@ -8,7 +8,8 @@
  */
 int main(int argc, char *argv[])
 {
-	long int product, count, count2, print = 1;
+	unsigned long int product, count, count2, print = 1;
+	void *pointerProduct;
 
 	if (argc == 3)
 	{
@@ -31,9 +32,21 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
+	pointerProduct = malloc(sizeof(product));
+		if (pointerProduct == NULL)
+		{
+			exit(98);
+		}
+
+	for (count = 0; count < (sizeof(product)); count++)
+	{
+		pointerProduct[count] = (product / 10);
+	}
+
 	if (print == 1)
 	{
 		printf("%ld\n", product);
+		printf("%lu\n", sizeof(atoi(argv[1])));
 	}
 	if (print == 0)
 	{
