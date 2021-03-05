@@ -1,6 +1,8 @@
 #include <stdlib.h>
 #include "holberton.h"
 
+char *_memcpy(char *dest, char *src, unsigned int n);
+
 /**
  * *_realloc - function that reallocates a memory block using
  * @ptr: old pointer
@@ -11,43 +13,43 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *newPointer;
-	unsigned int count;
 
 	if (new_size == old_size)
+	{
 		return (ptr);
+	}
 
 	if (new_size == 0 && ptr != NULL)
 	{
 		free(ptr);
 		return (NULL);
 	}
+
 	if (ptr == NULL)
 	{
 		newPointer = malloc(new_size);
-		if (newPointer)
-		{
-			return (NULL);
-		}
+		return (newPointer);
 	}
+
 	newPointer = malloc(new_size);
 		if (newPointer == NULL)
 		{
 			return (NULL);
 		}
-	if (old_size <= new_size)
-	{
-		for (count = 0; count < new_size; count++)
-		{
-			newPointer[count] = ((char *)ptr)[count];
-		}
-	}
-	if (new_size > old_size)
-	{
-		for (count = 0; count < old_size; count++)
-		{
-			newPointer[count] = ((char *)ptr)[count];
-		}
-	}
+
+	_memcpy(newPointer, ptr, old_size);
+
 	free(ptr);
 	return (newPointer);
+}
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+	unsigned int count;
+
+	for (count = 0; count < n; count++)
+	{
+		dest[count] = src[count];
+	}
+
+	return (dest);
 }
