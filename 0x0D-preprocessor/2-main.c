@@ -3,11 +3,6 @@
 
 #define FILENAME __FILE__
 
-int _putchar(char c)
-{
-		return (write(1, &c, 1));
-}
-
 /**
  * main - program prints the name of the file
  * it was compiled from
@@ -16,7 +11,7 @@ int _putchar(char c)
  */
 int main(void)
 {
-	printf("%s\n", __FILE__);
+	printf("%s\n", FILENAME);
 
 	return (0);
 }
