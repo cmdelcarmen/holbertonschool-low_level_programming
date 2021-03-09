@@ -1,5 +1,5 @@
-#include <stddef.h>
 #include <stdio.h>
+#include "dog.h"
 /**
  * print_dog - function prints a struct dog
  * @d: pointer to struct passe
@@ -14,7 +14,7 @@ void print_dog(struct dog *d)
 
 	else
 	{
-		if ((*d).name != NULL)
+		if ((*d).name != 0)
 		{
 			printf("Name: %s\n", (*d).name);
 		}
@@ -23,7 +23,7 @@ void print_dog(struct dog *d)
 			printf("(nil)\n");
 		}
 
-		if ((*d).age != NULL)
+		if ((*d).age != 0)
 		{
 			printf("Age: %f\n", (*d).age);
 		}
@@ -32,7 +32,7 @@ void print_dog(struct dog *d)
 			printf("(nil\n)");
 		}
 
-		if ((*d).owner != NULL)
+		if ((*d).owner != 0)
 		{
 			printf("Owner: %s\n", (*d).owner);
 		}
