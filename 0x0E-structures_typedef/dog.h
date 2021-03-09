@@ -3,8 +3,6 @@
 
 #include <stdio.h>
 
-void init_dog(struct dog *d, char *name, float age, char *owner);
-
 /**
  * struct dog - Short description
  * @name: First member
@@ -13,10 +11,13 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
  *
  * Description: Longer description
  */
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog;
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
+
 #endif
