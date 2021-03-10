@@ -1,5 +1,12 @@
 #include "function_pointers.h"
 
+/**
+ * int_index - function searches for an integer
+ * @array: array of ints
+ * @size: size of array
+ * @cmp: pointer to function
+ * Return: -1 or index in element
+ */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int count;
