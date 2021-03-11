@@ -21,7 +21,7 @@ int (*get_op_func(char *s))(int, int)
 			{NULL, NULL}
 	};
 
-	while (count < 6)
+	while (count < 5)
 	{
 		if (strcmp(s, ops[count].op) == 0)
 		{

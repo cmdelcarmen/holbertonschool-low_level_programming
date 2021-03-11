@@ -20,21 +20,22 @@ int main(int argc, char **argv)
 		exit(98);
 	}
 
+	math = get_op_func(argv[2]);
+
+	if (math == NULL || argv[2][1] != '\0')
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
 	if ((*argv[2] == '/' || *argv[2] == '%') && (*argv[3] == '0'))
 	{
 		printf("Error\n");
 		exit(100);
 	}
+
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-
-	math = get_op_func(argv[2]);
-
-	if (math == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
 
 	calc = math(num1, num2);
 
