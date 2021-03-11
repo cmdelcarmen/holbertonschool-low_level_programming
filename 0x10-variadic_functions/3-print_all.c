@@ -27,17 +27,14 @@ void print_all(const char * const format, ...)
 				printf("%s%c", comma, va_arg(printList, int));
 				comma = ", ";
 				break;
-
 			case 'i':
 				printf("%s%d", comma, va_arg(printList, int));
 				comma = ", ";
 				break;
-
 			case 'f':
 				printf("%s%f", comma, va_arg(printList, double));
 				comma = ", ";
 				break;
-
 			case 's':
 				string = va_arg(printList, char *);
 				if (string == NULL)
@@ -49,7 +46,6 @@ void print_all(const char * const format, ...)
 		comma = ", ";
 		count2++;
 	}
-
 	printf("\n");
 	va_end(printList);
 }
