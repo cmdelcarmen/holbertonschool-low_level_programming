@@ -45,14 +45,11 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				string = va_arg(printList, char *);
-				if (string != NULL)
+				if (string == NULL)
 				{
+					string = "(nil)";
+				}
 					printf("%s", string);
-				}
-				else
-				{
-					printf("(nil)");
-				}
 				break;
 			default:
 				break;
