@@ -30,7 +30,6 @@ void print_all(const char * const format, ...)
 
 	va_start(printList, format);
 	stop = getLength(format);
-
 	while (format[count2] != '\0')
 	{
 		switch (format[count2])
@@ -50,15 +49,9 @@ void print_all(const char * const format, ...)
 			case 's':
 				string = va_arg(printList, char *);
 				if (string == NULL)
-				{
 					string = "(nil)";
-				}
-					printf("%s", string);
-				
+				printf("%s", string);
 				comma = 1;
-				break;
-
-			default:
 				break;
 		}
 		count2++;
