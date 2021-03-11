@@ -26,13 +26,6 @@ int main(int argc, char **argv)
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	if (*argv[2] != '+' && *argv[2] && '-' && *argv[2] != '*' &&
-		*argv[2] != '/' && *argv[2] && '%')
-	{
-		printf("Error\n");
-		exit(99);
-	}
-	
 	calc = get_op_func(argv[2])(num1, num2);
 
 	printf("%d\n", calc);
