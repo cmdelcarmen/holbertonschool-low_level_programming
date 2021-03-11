@@ -10,7 +10,7 @@
  */
 int main(int argc, char **argv)
 {
-	int num1, num2, calc = -1;
+	int num1, num2, calc;
 
 	if (argc != 4)
 	{
@@ -26,13 +26,14 @@ int main(int argc, char **argv)
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 
-	calc = get_op_func(argv[2])(num1, num2);
-
-	if (calc == -1)
+	if (*argv[2] != '+' && *argv[2] && '-' && *argv[2] != '*' &&
+		*argv[2] != '/' && *argv[2] && '%')
 	{
-		printf("Error");
+		printf("Error\n");
 		exit(99);
 	}
+	
+	calc = get_op_func(argv[2])(num1, num2);
 
 	printf("%d\n", calc);
 
