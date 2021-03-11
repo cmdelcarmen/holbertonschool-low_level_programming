@@ -23,7 +23,5 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 
-	num = atoi(*argv[1]);
-
 	return (0);
 }
