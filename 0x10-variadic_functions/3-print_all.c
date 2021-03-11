@@ -43,7 +43,6 @@ void print_all(const char * const format, ...)
 				comma = ", ";
 				break;
 		}
-		comma = ", ";
 		count2++;
 	}
 	printf("\n");
