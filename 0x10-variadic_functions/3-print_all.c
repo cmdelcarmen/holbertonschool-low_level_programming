@@ -15,6 +15,7 @@ void print_all(const char * const format, ...)
 	if (format == NULL)
 	{
 		printf("\n");
+		va_end(printList);
 		return;
 	}
 
