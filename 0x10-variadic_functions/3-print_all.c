@@ -30,7 +30,7 @@ void print_all(const char * const format, ...)
 
 	va_start(printList, format);
 	stop = getLength(format);
-	while (format[count2] != '\0')
+	while (format != NULL && format[count2] != '\0')
 	{
 		switch (format[count2])
 		{
