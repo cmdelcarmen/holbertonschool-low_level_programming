@@ -8,9 +8,9 @@
  */
 int getLength(const char * const s)
 {
-	int count, arrayLength = 0;
+	int arrayLength = 0;
 
-	for (count = 0; s[count] != '\0'; count++)
+	while (s[arrayLength] != '\0')
 	{
 		arrayLength++;
 	}
