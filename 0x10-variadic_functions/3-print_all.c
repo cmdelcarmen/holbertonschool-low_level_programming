@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * print_all - function prints anything
- * @fomrat:
- * Return: nothing:
+ * getLength - function
+ * @s: array of char
+ * Return: int:
  */
 int getLength(const char * const s)
 {
@@ -17,7 +17,13 @@ int getLength(const char * const s)
 	return (arrayLength);
 }
 
+/**
+ * print_all - function prints anything
+ * @format: data types
+ * Return: nothing:
+ */
 void print_all(const char * const format, ...)
+
 {
 	int count2 = 0, comma = 0, stop;
 	va_list printList;
@@ -32,22 +38,16 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				printf("%c", va_arg(printList, int));
-				count2++;
 				comma = 1;
 				break;
-
 			case 'i':
 				printf("%i", va_arg(printList, int));
-				count2++;
 				comma = 1;
 				break;
-
 			case 'f':
 				printf("%f", va_arg(printList, double));
-				count2++;
 				comma = 1;
 				break;
-
 			case 's':
 				string = va_arg(printList, char *);
 				if (string != NULL)
@@ -58,14 +58,12 @@ void print_all(const char * const format, ...)
 				{
 					printf("(nil)");
 				}
-				count2++;
 				comma = 1;
 				break;
-
 			default:
-				count2++;
 				break;
 		}
+		count2++;
 		if ((comma == 1) && count2 < stop)
 		{
 			printf(", ");
