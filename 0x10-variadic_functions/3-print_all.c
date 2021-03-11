@@ -18,7 +18,6 @@ void print_all(const char * const format, ...)
 		va_end(printList);
 		return;
 	}
-
 	va_start(printList, format);
 	while (format[count2] != '\0')
 	{
@@ -26,14 +25,17 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				printf("%s%c", comma, va_arg(printList, int));
+				comma = ", ";
 				break;
 
 			case 'i':
-				printf("%s%i", comma, va_arg(printList, int));
+				printf("%s%d", comma, va_arg(printList, int));
+				comma = ", ";
 				break;
 
 			case 'f':
 				printf("%s%f", comma, va_arg(printList, double));
+				comma = ", ";
 				break;
 
 			case 's':
@@ -41,6 +43,7 @@ void print_all(const char * const format, ...)
 				if (string == NULL)
 					string = "(nil)";
 				printf("%s%s", comma, string);
+				comma = ", ";
 				break;
 		}
 		comma = ", ";
