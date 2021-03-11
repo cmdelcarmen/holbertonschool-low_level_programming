@@ -24,24 +24,28 @@ int getLength(const char * const s)
  */
 void print_all(const char * const format, ...)
 {
-	int count2 = 0, stop;
+	int count2 = 0, comma = 0, stop;
 	va_list printList;
 	char *string;
 
 	va_start(printList, format);
 	stop = getLength(format);
+
 	while (format[count2] != '\0')
 	{
 		switch (format[count2])
 		{
 			case 'c':
 				printf("%c", va_arg(printList, int));
+				comma = 1;
 				break;
 			case 'i':
 				printf("%i", va_arg(printList, int));
+				comma = 1;
 				break;
 			case 'f':
 				printf("%f", va_arg(printList, double));
+				comma = 1;
 				break;
 			case 's':
 				string = va_arg(printList, char *);
@@ -50,14 +54,19 @@ void print_all(const char * const format, ...)
 					string = "(nil)";
 				}
 					printf("%s", string);
+				
+				comma = 1;
 				break;
+
 			default:
 				break;
 		}
 		count2++;
-		if (count2 < stop)
+		if ((comma == 1) && count2 < stop)
+		{
 			printf(", ");
-
+			comma = 0;
+		}
 	}
 	printf("\n");
 	va_end(printList);
