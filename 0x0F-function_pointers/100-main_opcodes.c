@@ -9,6 +9,8 @@
  */
 int main(int argc, char **argv)
 {
+	int num;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -20,6 +22,8 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(2);
 	}
+
+	num = atoi(*argv[1]);
 
 	return (0);
 }
