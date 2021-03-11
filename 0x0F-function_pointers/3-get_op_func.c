@@ -3,12 +3,16 @@
 #include <string.h>
 #include <stdlib.h>
 
+/**
+ * get_op_func - function selects the correct function to perform the operation
+ * @s: string passed
+ * Return: pointer to function
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	int count = 0;
 
-	op_t ops[] =
-	{
+	op_t ops[] = {
 			{"+", op_add},
 			{"-", op_sub},
 			{"*", op_mul},
@@ -27,5 +31,5 @@ int (*get_op_func(char *s))(int, int)
 		count++;
 	}
 
-	return(ops[count].f);
+	return (ops[count].f);
 }
