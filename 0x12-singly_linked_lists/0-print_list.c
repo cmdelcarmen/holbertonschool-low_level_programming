@@ -12,10 +12,6 @@ size_t print_list(const list_t *h)
 	int count = 0;
 	const list_t *tempPointer;
 
-	if (h == NULL)
-	{
-		return (0);
-	}
 	tempPointer = h;
 
 	while (tempPointer != NULL)
