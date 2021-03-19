@@ -1,13 +1,12 @@
 #include "lists.h"
 
 /**
- * add_note - function that adds a node at the beginning of a list_t list
- * @head: head pointer
- * @str: name being added to the list
- * Return: the address of the new element or NULL if it failed
+ * duplicateString - function duplicates string
+ * @str: string passed
+ * Return: duplicated string
  */
 
-char *_strdup(const char *str)
+char *duplicateString(const char *str)
 {
 	char *copiedString;
 	int count = 0, arrayLength = 0;
@@ -38,6 +37,11 @@ char *_strdup(const char *str)
 	return (copiedString);
 }
 
+/**
+ * getLength - function gets length of array
+ * @s: string passed
+ * Return: length of array
+ */
 int getLength(const char *s)
 {
 	int count, arrayLength = 0;
@@ -50,6 +54,12 @@ int getLength(const char *s)
 	return (arrayLength);
 }
 
+/**
+ * add_node - function that adds a node at the beginning of a list_t list
+ * @head: head pointer
+ * @str: name being added to the list
+ * Return: the address of the new element or NULL if it failed
+ */
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *tempPointer;
@@ -65,7 +75,7 @@ list_t *add_node(list_t **head, const char *str)
 			return (NULL);
 		}
 
-	tempPointer->str = _strdup(str);
+	tempPointer->str = duplicateString(str);
 	tempPointer->len = getLength(str);
 	tempPointer->next = *head;
 
