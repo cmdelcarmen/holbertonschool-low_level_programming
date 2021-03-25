@@ -1,7 +1,5 @@
 #include "holberton.h"
 
-int getLength(unsigned int n);
-
 /**
  * get_bit - function that returns the value of a bit at a given index
  * @n: number passed
@@ -10,11 +8,9 @@ int getLength(unsigned int n);
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int count, length;
+	unsigned int count;
 
-	length = getLength(n);
-
-	if (index > (length - 1))
+	if (index > sizeof(unsigned long int))
 	{
 		return (-1);
 	}
@@ -25,20 +21,4 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 
 	return (n & 1);
-}
-/**
- * recur_binary - function prints out recursion
- * @n: unsigned int 
- * Return: length
- */
-int getLength(unsigned int number)
-{
-	int count = 1;
-
-	if ((number / 2) > 0)
-	{
-		count += getLength(number / 2);
-	}
-
-	return (count);
 }
