@@ -13,6 +13,11 @@ unsigned int binary_to_uint(const char *b)
 {
 	int binary, lastNum, uInt = 0, count = 0;
 
+	if (b == NULL)
+	{
+		return (0);
+	}
+
 	binary = _atoi(b);
 
 	while (binary != 0)
