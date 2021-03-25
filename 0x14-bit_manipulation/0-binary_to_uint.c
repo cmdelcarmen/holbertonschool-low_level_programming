@@ -1,14 +1,12 @@
 #include "holberton.h"
 
+unsigned int _atoi(const char *s);
+
 /**
  * binary_to_uint - function conversts a binary number to an insigned int
  * @b: pointer to a string of 0 and 1 chars
  * Return: the converter number or 0 if b is NULL or if non index element
- *
  */
-
-int _atoi(const char *s);
-
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int binary, lastNum, uInt = 0, count = 0;
@@ -45,7 +43,7 @@ unsigned int binary_to_uint(const char *b)
  * @s: string passed
  * Return: unsigned int
  */
-int _atoi(const char *s)
+unsigned int _atoi(const char *s)
 {
 	unsigned int i = 0, len = 0, num = 0, sign = 1, ok = 0;
 
