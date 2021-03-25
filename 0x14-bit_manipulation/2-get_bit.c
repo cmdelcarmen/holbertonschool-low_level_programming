@@ -14,14 +14,14 @@ int get_bit(unsigned long int n, unsigned int index)
 
 	length = getLength(n);
 
-	if (index > (length - 1))
-	{
-		return (0);
-	}
-
 	if (index > sizeof(unsigned long int) * 8)
 	{
 		return (-1);
+	}
+
+	if (index > (length - 1))
+	{
+		return (0);
 	}
 
 	for (count = 0; count < index; count++)
