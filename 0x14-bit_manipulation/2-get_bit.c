@@ -1,33 +1,43 @@
 #include "holberton.h"
 
-int recur_binary(unsigned int n);
+int getLength(unsigned int n);
 
+/**
+ * get_bit - function that returns the value of a bit at a given index
+ * @n: number passed
+ * @index: index to count until
+ * Return: (n & 1)
+ */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned int idx, length;
+	unsigned int count, length;
 
-	length = recur_binary(n);
+	length = getLength(n);
 
-	if (index > length)
+	if (index > (length - 1))
 	{
 		return (-1);
 	}
 
-	for (idx = 0; idx < index; idx++)
+	for (count = 0; count < index; count++)
 	{
 		n = n >> 1;
 	}
 
 	return (n & 1);
 }
-
-int recur_binary(unsigned int n)
+/**
+ * recur_binary - function prints out recursion
+ * @n: unsigned int 
+ * Return: length
+ */
+int getLength(unsigned int number)
 {
 	int count = 1;
 
-	if ((n / 2) > 0)
+	if ((number / 2) > 0)
 	{
-		count += recur_binary(n / 2);
+		count += getLength(number / 2);
 	}
 
 	return (count);
