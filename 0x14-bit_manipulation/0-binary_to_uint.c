@@ -11,7 +11,7 @@ int _atoi(const char *s);
 
 unsigned int binary_to_uint(const char *b)
 {
-	int binary, lastNum, uInt = 0, count = 0;
+	unsigned int binary, lastNum, uInt = 0, count = 0;
 
 	if (b == NULL)
 	{
@@ -40,9 +40,14 @@ unsigned int binary_to_uint(const char *b)
 	return (uInt);
 }
 
+/**
+ * _atoi - function turns string into integer
+ * @s: string passed
+ * Return: unsigned int
+ */
 int _atoi(const char *s)
 {
-	int i = 0, len = 0, num = 0, sign = 1, ok = 0;
+	unsigned int i = 0, len = 0, num = 0, sign = 1, ok = 0;
 
 	while (s[len] != '\0')
 	{
