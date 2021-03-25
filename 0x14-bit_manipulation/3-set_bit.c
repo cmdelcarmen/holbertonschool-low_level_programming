@@ -1,12 +1,11 @@
 #include "holberton.h"
 
 /**
- *  * get_bit - function that returns the value of a bit at a given index
- *   * @n: number passed
- *    * @index: index to count until
- *     * Return: (n & 1)
- *      */
-
+ * set_bit - function that returns the value of a bit at a given index
+ * @n: number passed
+ * @index: index to count until
+ * Return: 1 or -1
+ */
 int set_bit(unsigned long int *n, unsigned int index)
 {
 
