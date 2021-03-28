@@ -1,25 +1,18 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 
 /**
- *  * main - check the code for Holberton School students.
- *   *
- *    * Return: Always 0.
- *     */
-int main(void)
+ * free_list - function frees memory
+ * @head: pointer to first node
+ */
+void free_list(list_t *head)
 {
-	list_t *head;
+	list_t *pointer;
 
-	head = NULL;
-	add_node_end(&head, "Bob");
-	add_node_end(&head, "&");
-	add_node_end(&head, "Kris");
-	add_node_end(&head, "love");
-	add_node_end(&head, "asm");
-	print_list(head);
-	free_list(head);
-	head = NULL;
-	return (0);
+	while (head != NULL)
+	{
+		pointer = head->next;
+		free(head->str);
+		free(head);
+		head = pointer;
+	}
 }
