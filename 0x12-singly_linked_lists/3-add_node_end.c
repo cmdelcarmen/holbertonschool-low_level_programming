@@ -57,38 +57,42 @@ int getLength(const char *s)
  * add_node_end - function adds node at the end of a list_t list
  * @head: pointer to head of node
  * @str: string that new node will contain
+ * Return: pointer to last node
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *copy;
+	list_t *copy, *temp;
+
+	temp = *head;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	while (*head != NULL)
+	while (temp != NULL && temp->next != NULL)
 	{
-		*head = (*head)->next;
+		temp = temp->next;
 	}
 
-	printf("finished while lopp\n");
-
-	copy = (list_t *)malloc(sizeof(list_t));
+	copy = malloc(sizeof(list_t));
 		if (copy == NULL)
 		{
 			return (NULL);
 		}
-	printf("arrive 1\n");
 
 	copy->str = duplicateString(str);
 	copy->len = getLength(str);
 	copy->next = NULL;
 
-	printf("%s %d\n", copy->str, copy->len);
+	if (temp != NULL)
+	{
+		temp->next = copy;
+	}
+	if (*head == NULL)
+	{
+		*head = copy;
+	}
 
-	(*head)->next = copy;
-
-	printf("arrive 3\n");
 	return (copy);
 }
