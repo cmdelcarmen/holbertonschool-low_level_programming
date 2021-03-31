@@ -9,8 +9,7 @@
  */
 int main(argc, *argv[])
 {
-	int fd, b, c, d;
-	char buffer[1024];
+	int fd;
 
 	if (argc != 3)
 	{
@@ -25,6 +24,7 @@ int main(argc, *argv[])
 					exit(98);
 		}
 
+	close(fd);
 	return (0);
 }
 
