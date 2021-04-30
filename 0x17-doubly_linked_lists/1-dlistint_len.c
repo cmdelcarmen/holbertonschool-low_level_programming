@@ -5,7 +5,7 @@
  * @h: pointer to head of the linked list
  * Return: the number of nodes
  */
-size_t print_dlistint(const dlistint_t *h)
+size_t dlistint_len(const dlistint_t *h)
 {
 	int count = 0;
 	const dlistint_t *tempPointer;
@@ -14,8 +14,6 @@ size_t print_dlistint(const dlistint_t *h)
 
 	while (tempPointer != NULL)
 	{
-		printf("[%d\n", tempPointer->n);
-
 		tempPointer = tempPointer->next;
 		count++;
 	}
