@@ -2,18 +2,18 @@
 
 
 /**
- *  * add_node_end - function adds node at the end of a list_t list
- *   * @head: pointer to head of node
- *    * @str: string that new node will contain
- *     * Return: pointer to last node
- *      */
+ * add_dnodeint_end - function adds node at the end of a list_t list
+ * @head: pointer to head of node
+ * @n: value for node
+ * Return: pointer to last node
+ */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *copy, *temp;
 
 	temp = *head;
 
-	while (temp != NULL && temp->next != NULL)
+	while (temp != NULL)
 	{
 		temp = temp->next;
 	}
@@ -31,10 +31,13 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	{
 		temp->next = copy;
 	}
-	if (*head == NULL)
+	if (temp == NULL)
 	{
+		copy->prev = NULL;
 		*head = copy;
+		return (*head);
 	}
+	copy->prev = temp;
 
 	return (copy);
 }
