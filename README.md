@@ -4,7 +4,7 @@
   <img width="700" height="350" src="https://i2.wp.com/nileease.com/wp-content/uploads/2020/08/ea862c2c1781bb4233ef774f8dfe7f19.gif">
 </p>
 
-<h3 align="center">Styled using [Betty guidelines](https://github.com/holbertonschool/Betty/wiki), all files compiled on Ubuntu 14.04 LTS using gcc 4.8.4, using the options -Wall -Werror -Wextra -pedantic.</h3>
+<h3 align="center">Styled using <a href="https://github.com/holbertonschool/Betty/wiki">Betty guidelines</a>, all files compiled on Ubuntu 14.04 LTS using gcc 4.8.4, using the options -Wall -Werror -Wextra -pedantic.</h3>
 
 | Directories | Learning Goal 🤓 |
 | --- | --- |
