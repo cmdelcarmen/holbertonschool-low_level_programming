@@ -8,29 +8,26 @@
 
 | Directories | Learning Goal 🤓 |
 | --- | --- |
-| [0x00-hello_world](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x00-hello_world) | learning goal |
-| [0x01-variables_if_else_while](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x01-variables_if_else_while) | learning goal |
-| [0x02-functions_nested_loops](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x02-functions_nested_loops) | learning goal |
-| [0x03-debugging](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x03-debugging) | learning goal |
-| [0x04-more_functions_nested_loops](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x04-more_functions_nested_loops) | learning goal |
-| [0x05-pointers_arrays_strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x05-pointers_arrays_strings) | learning goal |
-| [0x06-pointers_arrays-strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x06-pointers_arrays_strings) | learning goal |
-| [0x07-pointers_arrays_strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x07-pointers_arrays_strings) | learning goal |
-| [0x08-recursion](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x08-recursion) | learning goal |
-| [0x09-static_libraries](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x09-static_libraries) | learning goal |
+| [0x00-hello_world](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x00-hello_world) | Standard library, return, main function, printf/puts/putchar, sizeof, gcc |
+| [0x01-variables_if_else_while](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x01-variables_if_else_while) | Conditional statements, variable types, arithmetic/logical/relational operators, True/False, comments, while loops, ASCII table |
+| [0x02-functions_nested_loops](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x02-functions_nested_loops) | Prototypes, header files, nested for/while loops |
+| [0x03-debugging](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x03-debugging) | gdb debugger |
+| [0x04-more_functions_nested_loops](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x04-more_functions_nested_loops) | Nested loops, scope of variables |
+| [0x05-pointers_arrays_strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x05-pointers_arrays_strings) | Pointers, arrays, how to manipulate strings |
+| [0x06-pointers_arrays-strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x06-pointers_arrays_strings) | Pointers and arrays |
+| [0x07-pointers_arrays_strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x07-pointers_arrays_strings) | Double pointers and 2D arrays |
+| [0x08-recursion](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x08-recursion) | Recursion |
+| [0x09-static_libraries](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x09-static_libraries) | What is a static library, how does it work, how to create one, and how to use it |
 | [0x0A-argc_argv](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0A-argc_argv) | learning goal |
-| [B](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0B-malloc_free) | learning goal |
-| [C](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0C-more_malloc_free) | learning goal |
-| [D](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0D-preprocessor) | learning goal |
-| [E](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0E-structures_typedef) | learning goal |
-| [F](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0F-function_pointers) | learning goal |
-| [10](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x10-variadic_functions) | learning goal |
-| [12](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x12-singly_linked_lists) | learning goal |
-| [13](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x13-more_singly_linked_lists) | learning goal |
-| [14](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x14-bit_manipulation) | learning goal |
-| [15](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x15-file_io) | learning goal |
-| [17](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x17-doubly_linked_lists) | learning goal |
-| [18](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x18-dynamic_libraries) | learning goal |
-
-
-
+| [0x0B-malloc_free](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0B-malloc_free) | learning goal |
+| [0x0C-more_malloc_free ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0C-more_malloc_free) | learning goal |
+  [0x0D-preprocessor](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0D-preprocessor) | learning goal |
+| [0x0E-structures_typedef](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0E-structures_typedef) | learning goal |
+| [0x0F-function_pointers](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0F-function_pointers) | learning goal |
+| [0x10-variadic_functions ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x10-variadic_functions) | learning goal |
+| [0x12-singly_linked_lists ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x12-singly_linked_lists) | learning goal |
+| [0x13-more_singly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x13-more_singly_linked_lists) | learning goal |
+| [0x14-bit_manipulation](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x14-bit_manipulation) | learning goal |
+| [0x15-file_io ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x15-file_io) | learning goal |
+| [0x17-doubly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x17-doubly_linked_lists) | learning goal |
+| [0x18-dynamic_libraries](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x18-dynamic_libraries) | learning goal |
