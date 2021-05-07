@@ -1,4 +1,4 @@
-<h1 align="center"> The C Programmer Language 👵 </h1>
+<h1 align="center"> The C Programming Language 👵 </h1>
 
 <p align="center">
   <img width="700" height="350" src="https://i2.wp.com/nileease.com/wp-content/uploads/2020/08/ea862c2c1781bb4233ef774f8dfe7f19.gif">
@@ -8,17 +8,17 @@
 
 | Directories | Learning Goal 🤓 |
 | --- | --- |
-| [0](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x00-hello_world) | learning goal |
-| [1](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x01-variables_if_else_while) | learning goal |
-| [2](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x02-functions_nested_loops) | learning goal |
-| [3](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x03-debugging) | learning goal |
-| [4](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x04-more_functions_nested_loops) | learning goal |
-| [5](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x05-pointers_arrays_strings) | learning goal |
-| [6](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x06-pointers_arrays_strings) | learning goal |
-| [7](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x07-pointers_arrays_strings) | learning goal |
-| [8](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x08-recursion) | learning goal |
-| [9](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x09-static_libraries) | learning goal |
-| [A](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0A-argc_argv) | learning goal |
+| [0x00-hello_world](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x00-hello_world) | learning goal |
+| [0x01-variables_if_else_while](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x01-variables_if_else_while) | learning goal |
+| [0x02-functions_nested_loops](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x02-functions_nested_loops) | learning goal |
+| [0x03-debugging](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x03-debugging) | learning goal |
+| [0x04-more_functions_nested_loops](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x04-more_functions_nested_loops) | learning goal |
+| [0x05-pointers_arrays_strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x05-pointers_arrays_strings) | learning goal |
+| [0x06-pointers_arrays-strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x06-pointers_arrays_strings) | learning goal |
+| [0x07-pointers_arrays_strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x07-pointers_arrays_strings) | learning goal |
+| [0x08-recursion](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x08-recursion) | learning goal |
+| [0x09-static_libraries](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x09-static_libraries) | learning goal |
+| [0x0A-argc_argv](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0A-argc_argv) | learning goal |
 | [B](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0B-malloc_free) | learning goal |
 | [C](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0C-more_malloc_free) | learning goal |
 | [D](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0D-preprocessor) | learning goal |
