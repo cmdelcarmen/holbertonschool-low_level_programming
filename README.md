@@ -18,16 +18,16 @@
 | [0x07-pointers_arrays_strings](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x07-pointers_arrays_strings) | Double pointers and 2D arrays |
 | [0x08-recursion](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x08-recursion) | Recursion |
 | [0x09-static_libraries](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x09-static_libraries) | What is a static library, how does it work, how to create one, and how to use it |
-| [0x0A-argc_argv](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0A-argc_argv) | learning goal |
-| [0x0B-malloc_free](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0B-malloc_free) | learning goal |
-| [0x0C-more_malloc_free ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0C-more_malloc_free) | learning goal |
-  [0x0D-preprocessor](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0D-preprocessor) | learning goal |
-| [0x0E-structures_typedef](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0E-structures_typedef) | learning goal |
-| [0x0F-function_pointers](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0F-function_pointers) | learning goal |
-| [0x10-variadic_functions ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x10-variadic_functions) | learning goal |
-| [0x12-singly_linked_lists ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x12-singly_linked_lists) | learning goal |
-| [0x13-more_singly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x13-more_singly_linked_lists) | learning goal |
-| [0x14-bit_manipulation](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x14-bit_manipulation) | learning goal |
-| [0x15-file_io ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x15-file_io) | learning goal |
-| [0x17-doubly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x17-doubly_linked_lists) | learning goal |
-| [0x18-dynamic_libraries](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x18-dynamic_libraries) | learning goal |
+| [0x0A-argc_argv](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0A-argc_argv) | How to use arguments passed to your programs |
+| [0x0B-malloc_free](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0B-malloc_free) | Malloc, free, valgrind |
+| [0x0C-more_malloc_free ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0C-more_malloc_free) | exit, calloc and realloc |
+  [0x0D-preprocessor](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0D-preprocessor) | Macros, header files guard |
+| [0x0E-structures_typedef](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0E-structures_typedef) | Structures and why use them, typedef |
+| [0x0F-function_pointers](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0F-function_pointers) | How to use function pointers |
+| [0x10-variadic_functions ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x10-variadic_functions) |va_start, va_arg, va_end, const type qualifier |
+| [0x12-singly_linked_lists ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x12-singly_linked_lists) | Linked lists vs arrays, how to build and use linked lists |
+| [0x13-more_singly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x13-more_singly_linked_lists) |Modifying inked lists |
+| [0x14-bit_manipulation](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x14-bit_manipulation) | How to manipulate bits and use bitwise operators |
+| [0x15-file_io ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x15-file_io) | How to create, open, close, read and write files |
+| [0x17-doubly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x17-doubly_linked_lists) | What is and how to use a double linked list, modifying doubly linked lists |
+| [0x18-dynamic_libraries](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x18-dynamic_libraries) | What is a dynamic library, how does it work, how to create one, and how to use it, $LD_LIBRARY_PATH |
