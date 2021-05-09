@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- *  * free_list - function frees memory
- *   * @head: pointer to first node
- *    */
+ * free_dlistint - function frees memory
+ * @head: pointer to first node
+ */
 void free_dlistint(dlistint_t *head)
 {
 	dlistint_t *pointer;
