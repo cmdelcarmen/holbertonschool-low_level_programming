@@ -26,7 +26,7 @@
 | [0x0F-function_pointers](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x0F-function_pointers) | How to use function pointers |
 | [0x10-variadic_functions ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x10-variadic_functions) |va_start, va_arg, va_end, const type qualifier |
 | [0x12-singly_linked_lists ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x12-singly_linked_lists) | Linked lists vs arrays, how to build and use linked lists |
-| [0x13-more_singly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x13-more_singly_linked_lists) |Modifying inked lists |
+| [0x13-more_singly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x13-more_singly_linked_lists) |Modifying linked lists |
 | [0x14-bit_manipulation](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x14-bit_manipulation) | How to manipulate bits and use bitwise operators |
 | [0x15-file_io ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x15-file_io) | How to create, open, close, read and write files |
 | [0x17-doubly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x17-doubly_linked_lists) | What is and how to use a double linked list, modifying doubly linked lists |
