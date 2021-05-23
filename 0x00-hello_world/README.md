@@ -1,4 +1,4 @@
-#**Learning Objectives**
+**Learning Objectives**
 
 •What happens when you type gcc main.c  
 •What is main  
