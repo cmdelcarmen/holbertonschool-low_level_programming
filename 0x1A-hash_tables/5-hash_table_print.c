@@ -7,15 +7,19 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned int index = 0;
+	int comma = 1;
 
 	printf("{");
 	while (index < ht->size)
 	{
 		if (ht->array[index] != NULL)
 		{
-			printf("'%s': '%s'", ht->array[index]->key, ht->array[index]->value);
-			if (ht->array[index + 1] != NULL)
+			if (comma == 0)
+			{
 				printf(", ");
+			}
+			printf("'%s': '%s'", ht->array[index]->key, ht->array[index]->value);
+			comma = 0;
 		}
 		index++;
 	}
