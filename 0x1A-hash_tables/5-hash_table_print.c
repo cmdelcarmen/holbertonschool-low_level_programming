@@ -14,12 +14,17 @@ void hash_table_print(const hash_table_t *ht)
 	{
 		if (ht->array[index] != NULL)
 		{
-			if (comma == 0)
+			while (ht->array[index])
 			{
-				printf(", ");
+				if (comma == 0)
+				{
+					printf(", ");
+				}
+				printf("'%s': '%s'", ht->array[index]->key, ht->array[index]->value);
+				comma = 0;
+
+				ht->array[index] = ht->array[index]->next;
 			}
-			printf("'%s': '%s'", ht->array[index]->key, ht->array[index]->value);
-			comma = 0;
 		}
 		index++;
 	}
