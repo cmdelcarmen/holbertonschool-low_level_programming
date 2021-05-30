@@ -32,7 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht->array[index] != NULL)
 	{
-		while(ht->array[index])
+		while (ht->array[index])
 		{
 			ht->array[index] = ht->array[index]->next;
 		}
@@ -40,7 +40,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht->array[index] == NULL)
 		newNode->next = NULL;
-	else	
+	else
 		newNode->next = ht->array[index];
 
 	ht->array[index] = newNode;
