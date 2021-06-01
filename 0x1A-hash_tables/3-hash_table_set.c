@@ -26,22 +26,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		if (newNode == NULL)
 			return (0);
 
-	newNode->key = strdup((char *)key);
+	newNode->key = (char *)key;
 	newNode->value = strdup((char *)value);
 	index = key_index((const unsigned char *)key, ht->size);
-
-	if (ht->array[index] != NULL)
-	{
-		while (ht->array[index])
-		{
-			ht->array[index] = ht->array[index]->next;
-		}
-	}
 
 	if (ht->array[index] == NULL)
 		newNode->next = NULL;
 	else
 		newNode->next = ht->array[index];
+
 
 	ht->array[index] = newNode;
 
