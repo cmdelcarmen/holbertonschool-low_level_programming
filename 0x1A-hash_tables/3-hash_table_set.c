@@ -34,18 +34,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	/*determing value of newNode->next*/
 	if (ht->array[index] == NULL)
-	{
 		newNode->next = NULL;
-		ht->array[index] = newNode;
-	}
 	else
-	{
-		while (ht->array[index])
-		{
-			ht->array[index] = ht->array[index]->next;
-		}
 		newNode->next = ht->array[index];
-		ht->array[index] = newNode;
-	}
+
+	/*inserting newNode into array*/
+	ht->array[index] = newNode;
+
 	return (1);
 }
