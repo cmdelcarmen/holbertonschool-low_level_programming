@@ -22,21 +22,30 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if ((strcmp(key, "") == 0) || key == NULL || value == NULL || ht == NULL)
 		return (0);
 
+	/*creating new node*/
 	newNode = malloc(sizeof(hash_node_t));
 		if (newNode == NULL)
 			return (0);
-
 	newNode->key = (char *)key;
-	newNode->value = strdup((char *)value);
+	newNode->value = strdup(value);
+
+	/*find what index the key/value pair will go in*/
 	index = key_index((const unsigned char *)key, ht->size);
 
+	/*determing value of newNode->next*/
 	if (ht->array[index] == NULL)
+	{
 		newNode->next = NULL;
+		ht->array[index] = newNode;
+	}
 	else
+	{
+		while (ht->array[index])
+		{
+			ht->array[index] = ht->array[index]->next;
+		}
 		newNode->next = ht->array[index];
-
-
-	ht->array[index] = newNode;
-
+		ht->array[index] = newNode;
+	}
 	return (1);
 }
