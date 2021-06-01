@@ -9,24 +9,30 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned int index = 0;
 	int comma = 0;
 
-	printf("{");
-	while (index < ht->size)
-	{
-		if (ht->array[index] != NULL)
-		{
-			while (ht->array[index])
-			{
-				if (comma == 1)
-				{
-					printf(", ");
-				}
-				printf("'%s': '%s'", ht->array[index]->key, ht->array[index]->value);
-				comma = 1;
+	if (ht == NULL)
+		return;
 
-				ht->array[index] = ht->array[index]->next;
+	else
+	{
+		printf("{");
+		while (index < ht->size)
+		{
+			if (ht->array[index] != NULL)
+			{
+				while (ht->array[index])
+				{
+					if (comma == 1)
+					{
+						printf(", ");
+					}
+					printf("'%s': '%s'", ht->array[index]->key, ht->array[index]->value);
+					comma = 1;
+
+					ht->array[index] = ht->array[index]->next;
+				}
 			}
+			index++;
 		}
-		index++;
+		printf("}\n");
 	}
-	printf("}\n");
 }
