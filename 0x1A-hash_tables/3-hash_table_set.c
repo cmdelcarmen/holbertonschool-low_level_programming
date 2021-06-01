@@ -17,17 +17,21 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *newNode = NULL;
+	char *key_copy, *value_copy;
 	unsigned long int index = 0;
 
 	if ((strcmp(key, "") == 0) || key == NULL || value == NULL || ht == NULL)
 		return (0);
 
+	key_copy = strdup(key);
+	value_copy = strdup(value);
+
 	/*creating new node*/
 	newNode = malloc(sizeof(hash_node_t));
 		if (newNode == NULL)
 			return (0);
-	newNode->key = (char *)key;
-	newNode->value = strdup(value);
+	newNode->key = key_copy;
+	newNode->value = value_copy;
 
 	/*find what index the key/value pair will go in*/
 	index = key_index((const unsigned char *)key, ht->size);
