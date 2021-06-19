@@ -31,3 +31,5 @@
 | [0x15-file_io ](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x15-file_io) | How to create, open, close, read and write files |
 | [0x17-doubly_linked_lists](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x17-doubly_linked_lists) | What is and how to use a double linked list, modifying doubly linked lists |
 | [0x18-dynamic_libraries](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x18-dynamic_libraries) | What is a dynamic library, how does it work, how to create one, and how to use it, $LD_LIBRARY_PATH |
+| [0x1A-hash_tables](https://github.com/cmdelcarmen/holbertonschool-low_level_programming/tree/main/0x1A-hash_tables) | |
+| []() |What is a hash function. What makes a good hash function. What is a hash table, how do they work, and how to use them. What is a collision and the main ways of dealing with them. Advantages and drawbacks of using hash tables. |
