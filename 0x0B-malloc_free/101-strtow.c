@@ -53,26 +53,6 @@ char **strtow(char *str)
 
 	return (words);
 }
-/**
- *  moveIndex - function moves the idx up from where we start reading command,
- * if there are extra spaces at beginning of user input
- * @usrinput: input from user
- * Return: the index to start reading command from
- */
-int moveIndex(char *usrinput)
-{
-	int count = 0, index1 = 0;
-
-	for (count = 0; (usrinput[index1] == 32  || usrinput[index1] == '\t')
-			&& usrinput[index1] != '\0'; count++)
-	{
-		index1++;
-
-		if (usrinput[index1] != 32)
-			return (index1);
-	}
-	return (index1);
-}
 
 /**
  * numberOfElementsInArray - function counts the number of words
