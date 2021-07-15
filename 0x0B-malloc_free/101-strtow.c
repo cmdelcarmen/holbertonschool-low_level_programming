@@ -14,7 +14,7 @@ char **strtow(char *str)
 	char **words;
 	int index = 0, index2 = 0, index3 = 0, spaces = 0, size = 0;
 
-	if (str == NULL)
+	if (str == NULL || str == "")
 		return (NULL);
 
 	size = numberOfElementsInArray(str);
