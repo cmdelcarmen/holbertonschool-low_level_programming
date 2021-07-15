@@ -1,5 +1,8 @@
 #include "holberton.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
 
 int numberOfElementsInArray(char *usrinput);
 char **getArray(char *usrinput);
@@ -14,7 +17,7 @@ char **strtow(char *str)
 	char **words;
 	int index = 0, index2 = 0, index3 = 0, spaces = 0, size = 0;
 
-	if (str == NULL || str == "")
+	if (str == NULL || (strcmp(str, "") == 0))
 		return (NULL);
 
 	size = numberOfElementsInArray(str);
