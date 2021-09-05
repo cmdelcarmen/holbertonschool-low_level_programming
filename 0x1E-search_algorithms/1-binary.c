@@ -28,7 +28,7 @@ void print_array(int *array, int start, int end)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	int middle = 0, idx = 0;
+	int middle = 0;
 	int start_of_array = 0, end_of_array = size - 1;
 
 	if (array)
